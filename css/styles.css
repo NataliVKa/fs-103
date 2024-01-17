@@ -77,16 +77,34 @@ address {
   padding-bottom: 32px;
 }
 
+.header-container {
+  display: flex;
+  gap: 90px;
+}
+
+.header-navigation {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
 .header-logo {
   color: #111;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .header-logo-italic {
   font-style: italic;
+}
+
+.header-menu-list {
+  display: flex;
 }
 
 .header-menu-link {
@@ -101,6 +119,10 @@ address {
 .header-menu-link:focus,
 .header-menu-link:active {
   color: #fd9222;
+}
+
+.head-soc-list {
+  display: flex;
 }
 
 /**-------------------------*/
@@ -212,11 +234,17 @@ address {
   padding-top: 120px;
 }
 
+.made-title {
+  max-width: 205px;
+  margin: 0 auto;
+}
+
 .made-subtitle {
   color: #111;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
+  margin-bottom: 50px;
 }
 
 .made-item-text {
@@ -228,6 +256,15 @@ address {
 
 /**----------------------------------*/
 /**-------------PRODUCTS-------------*/
+
+.products {
+  padding-top: 120px;
+}
+
+.products-title {
+  max-width: 196px;
+  margin: 0 auto;
+}
 
 .products-subtitle {
   color: #111;
@@ -256,6 +293,15 @@ address {
 /**----------------------------------*/
 /**-------------SELLERS--------------*/
 
+.sellers {
+  padding-top: 120px;
+}
+
+.sellers-title {
+  max-width: 160px;
+  margin: 0 auto;
+}
+
 .sellers-subtitle {
   color: #111;
   font-size: 18px;
@@ -267,6 +313,15 @@ address {
 
 /**----------------------------------*/
 /**-------------LOVED----------------*/
+
+.loved {
+  padding-top: 120px;
+}
+
+.loved-title {
+  max-width: 268px;
+  margin: 0 auto;
+}
 
 .loved-subtitle {
   color: #111;

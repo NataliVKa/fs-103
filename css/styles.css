@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #fafafa;
 }
 
 p,
@@ -31,6 +32,10 @@ button {
 
 address {
   font-style: normal;
+}
+
+img {
+  display: block;
 }
 
 .container {
@@ -152,20 +157,34 @@ address {
   max-width: 484px;
 }
 
+.hero-buttons {
+  display: flex;
+  align-items: center;
+}
+
 .hero-buy-btn {
+  padding: 14px 40px;
   color: #fff;
   font-family: inherit;
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
+  border-radius: 100px;
+  background: #fd9222;
+  border: none;
   cursor: pointer;
+  margin-right: 14px;
 }
 
 .hero-made-btn {
+  padding: 14px 40px;
   color: #fff;
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  background-color: transparent;
 }
 
 .hero-down-btn {
@@ -174,6 +193,7 @@ address {
   font-weight: 500;
   line-height: 1.29;
   letter-spacing: -0.03em;
+  margin-left: auto;
 }
 
 /**-------------------------*/
@@ -183,6 +203,17 @@ address {
   background: #1e1823;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.features-list {
+  display: flex;
+  padding-left: 18px;
+  padding-right: 18px;
+  gap: 88px;
+}
+
+.features-item {
+  width: calc((100% - 88px * 2) / 3);
 }
 
 .features-subtitle {
@@ -217,9 +248,26 @@ address {
   text-align: center;
   font-size: 14px;
   line-height: 1.29;
-  letter-spacing: -0.2em;
-  margin-bottom: 50px;
+  letter-spacing: -0.02em;
+  margin: 0 auto 50px;
   max-width: 486px;
+}
+
+.tast-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 32px;
+}
+
+.taste-item {
+  border-radius: 15px;
+  border: 1px solid #fd9222;
+  background: #fff;
+  width: calc((100% - 96px) / 4);
+  padding: 28px 23px;
+}
+
+.taste-img {
   margin: 0 auto;
 }
 
@@ -228,7 +276,13 @@ address {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.29;
-  letter-spacing: -0.2em;
+  letter-spacing: -0.02em;
+  padding-left: 5px;
+}
+
+.taste-img {
+  margin: 0 auto;
+  margin-bottom: 36px;
 }
 
 /**------------------------------*/
@@ -239,8 +293,20 @@ address {
 }
 
 .made-title {
-  max-width: 205px;
-  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.made-wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.made-img {
+}
+
+.made-content {
+  background-color: #ffffff;
+  padding: 32px;
 }
 
 .made-subtitle {
@@ -248,7 +314,15 @@ address {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
-  margin-bottom: 50px;
+  margin-bottom: 28px;
+  max-width: 350px;
+}
+
+.made-list {
+}
+
+.made-item + .made-item {
+  margin-top: 20px;
 }
 
 .made-item-text {
@@ -267,7 +341,20 @@ address {
 
 .products-title {
   max-width: 196px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 18px;
+}
+
+.products-item {
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fff;
+  width: calc((100% - 18px * 3) / 4);
 }
 
 .products-subtitle {
@@ -285,6 +372,7 @@ address {
   line-height: 1.17;
   letter-spacing: -0.02em;
 }
+
 .products-item-btn {
   color: #111;
   font-family: inherit;
@@ -303,7 +391,17 @@ address {
 
 .sellers-title {
   max-width: 160px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
+}
+
+.sellers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.sellers-item {
+  border-radius: 15px 15px 0px 0px;
 }
 
 .sellers-subtitle {
@@ -324,7 +422,20 @@ address {
 
 .loved-title {
   max-width: 268px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
+}
+
+.loved-list {
+  display: flex;
+  width: 1136px;
+  height: 240px;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex-shrink: 0;
+}
+
+.loved-item {
 }
 
 .loved-subtitle {
@@ -349,6 +460,9 @@ address {
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
+  border-radius: 100px;
+  border: 1px solid #fd9222;
+  background-color: transparent;
 }
 
 /**----------------------------------*/

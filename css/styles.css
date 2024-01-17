@@ -80,12 +80,14 @@ address {
 .header-container {
   display: flex;
   gap: 90px;
+  align-items: center;
 }
 
 .header-navigation {
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo {
@@ -105,6 +107,7 @@ address {
 
 .header-menu-list {
   display: flex;
+  gap: 24px;
 }
 
 .header-menu-link {
@@ -123,6 +126,7 @@ address {
 
 .head-soc-list {
   display: flex;
+  gap: 14px;
 }
 
 /**-------------------------*/
